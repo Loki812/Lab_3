@@ -32,32 +32,46 @@ Ensure you have the following installed:
 
 1. **Data Preparation**:
    - If you wish to create examples for the model to train on type
+     <br>
      '''
-     python3 data_prep.py <label> <text.txt>
+     python3 data_prep.py "label" "text.txt"
      '''
+     <br>
      Into the terminal, "label" is the label you wish to give all examples
+     <br>
      text.txt will be cut into 15 word segments and has the labels applied to the start of every line.
 
 2. **Model Training and Evaluation**:
    - If you wish to train the model type:
+     <br>
      '''
-     python3 lab3.py train <examples> <features> <hypothesisOut> <learning-type>
+     python3 lab3.py train "examples" "features" "hypothesisOut" "learning-type"
      '''
-     Where <examples> is a file with preprocesses examples (read above to learn how to run file),
-     <features> is a txt file with feature you want to the model to train on seperated by newlines.
+     <br>
+     Where "examples" is a file with preprocesses examples (read above to learn how to run file),
+     <br>
+     "features" is a txt file with feature you want to the model to train on seperated by newlines.
+     <br>
      **Note: Each feature will be searched through each example as a substring**
-     <hypothesisOut> is the filepath that you want to write your pre-train modeled to be encoded into for later use.
+     <br>
+     "hypothesisOut" is the filepath that you want to write your pre-train modeled to be encoded into for later use.
+     <br>
      **Note: Be careful as this can overwrite previous models if not checked beforehand**
-     <learning-type> is the type of model you want to use for your predictions, the only 2 accepted values are "dt" (decision tree) or "ada" (adaboost algorithm)
+     <br>
+     "learning-type" is the type of model you want to use for your predictions, the only 2 accepted values are "dt" (decision tree) or "ada" (adaboost algorithm)
 
 3. **Testing**:
    - If you wish to use your trained model to make predicitions on text use it as so:
+     <br>
      '''
-     python3 lab3.py predict <examples> <features> <hypothesis>
+     python3 lab3.py predict "examples" "features" "hypothesis"
      '''
-     <examples> is your unlabelled data, 15 word strings
-     <features> and un-needed arguement but was in the write-up for the school assignment. You can pass any file here as it will not be read
-     <hypothesis> must be a valid file path to a encoded model from the lab3.py file.
+     <br>
+     "examples" is your unlabelled data, 15 word strings
+     <br>
+     "features" and un-needed arguement but was in the write-up for the school assignment. You can pass any file here as it will not be read
+     <br>
+     "hypothesis" must be a valid file path to a encoded model from the lab3.py file.
 
 ## Notes
 
