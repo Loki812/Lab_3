@@ -33,8 +33,8 @@ Ensure you have the following installed:
 1. **Data Preparation**:
    - If you wish to create examples for the model to train on type
      <br>
-     '''
-     python3 data_prep.py "label" "text.txt"
+     ''' <br>
+     python3 data_prep.py "label" "text.txt" <br>
      '''
      <br>
      Into the terminal, "label" is the label you wish to give all examples
@@ -44,8 +44,8 @@ Ensure you have the following installed:
 2. **Model Training and Evaluation**:
    - If you wish to train the model type:
      <br>
-     '''
-     python3 lab3.py train "examples" "features" "hypothesisOut" "learning-type"
+     ''' <br>
+     python3 lab3.py train "examples" "features" "hypothesisOut" "learning-type" <br>
      '''
      <br>
      Where "examples" is a file with preprocesses examples (read above to learn how to run file),
@@ -63,8 +63,8 @@ Ensure you have the following installed:
 3. **Testing**:
    - If you wish to use your trained model to make predicitions on text use it as so:
      <br>
-     '''
-     python3 lab3.py predict "examples" "features" "hypothesis"
+     ''' <br>
+     python3 lab3.py predict "examples" "features" "hypothesis" <br>
      '''
      <br>
      "examples" is your unlabelled data, 15 word strings
