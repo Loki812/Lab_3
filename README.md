@@ -51,11 +51,3 @@ Ensure you have the following installed:
 
 - The `xor.model`, `xorFeatures.txt`, `xorLabel.dat`, and `xorNoLabel.dat` files pertain to experiments with the XOR problem, which is a classic test for machine learning algorithms.
 - Ensure that the datasets (`train.dat`, `test.dat`, `real_test.dat`) are in the correct format expected by the scripts.
-
-## Contributing
-
-Contributions are welcome. Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
